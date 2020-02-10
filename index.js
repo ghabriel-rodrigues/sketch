@@ -1,7 +1,7 @@
 //dependencies
 
 const server = require('./lib/server')
-// const workers = require('./lib/workers')
+const workers = require('./lib/workers')
 
 //declare the app
 let app = {}
@@ -10,7 +10,7 @@ let app = {}
 app.init = function(){
   //start the server and the workers
   server.init()
-  // workers.init()
+  workers.init()
 }
 
 app.init()
